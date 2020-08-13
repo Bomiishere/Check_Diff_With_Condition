@@ -75,7 +75,7 @@ for line in lines_after:
 		line_after_keys.append(values[0])
 		line_after_contents.append(values[1])
 
-### match same keys ###
+### Match Same Keys ###
 match_indexs_before = []
 match_indexs_after = []
 
@@ -84,8 +84,8 @@ for index_before, key_before in enumerate(line_before_keys):
 		match_indexs_before.append(index_before)
 		match_indexs_after.append(line_after_keys.index(key_before))
 
-### check cases ###
 
+### Check Cases ###
 for i, before_index in enumerate(match_indexs_before):
 	beforeContent = line_before_contents[before_index]
 	afterContent = line_after_contents[match_indexs_after[i]]
